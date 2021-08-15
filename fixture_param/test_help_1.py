@@ -1,0 +1,25 @@
+# Импортируем библиотеку requests
+import requests
+
+import pytest
+
+# Адрес api метода для запроса get
+
+# def test_get_locations_for_us_90210_check_status_code_equals_200():
+#     response = requests.get("http://api.zippopotam.us/us/90210")
+#     assert response.status_code == 200
+
+# url = 'https://api-dev.cloudmore.com/api/resellers/01d3a8ac-3fa2-7144-8149-14c83a35b4ed/settings/CustomProperties'
+# headers = {
+#     'Authorization': 'Token eyJhbGciOiJSUzI1NiIsImtpZCI6IkMzRERCQTEzNkU4MzFDNEFDMzM4OUY0OTM0NTJERjc1MDk3N0FFNjAiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJ3OTI2RTI2REhFckRPSjlKTkZMZmRRbDNybUEifQ.eyJuYmYiOjE2Mjg2ODE5OTMsImV4cCI6MTYyODc2ODM5MywiaXNzIjoiaHR0cHM6Ly9hcGktZGV2LmNsb3VkbW9yZS5jb20iLCJhdWQiOlsiaHR0cHM6Ly9hcGktZGV2LmNsb3VkbW9yZS5jb20vcmVzb3VyY2VzIiwiYXBpIl0sImNsaWVudF9pZCI6InJvLmN1c3RvbWVyLmNsaWVudCIsInN1YiI6ImF1dG90ZXN0QGNsb3VkbW9yZS5jb20iLCJhdXRoX3RpbWUiOjE2Mjg2ODE5OTMsImlkcCI6ImxvY2FsIiwicm9sZSI6IjEiLCJuYW1lIjoiYXV0b3Rlc3RAY2xvdWRtb3JlLmNvbSIsIlBhcmVudElkIjoiMDFkM2E4YWMtM2ZhMi03MTQ0LTgxNDktMTRjODNhMzViNGVkIiwic2NvcGUiOlsiYXBpIl0sImFtciI6WyJwYXNzd29yZCJdfQ.boacTbp7NlULhPXhT3Xpx8o_2Y7Fcje5cETUzgDGpbx0lE7qMEGYKbTaRjn4yy12TFVerjEa7CxsnFpwuNKPxvN5MZOveTGk0AC20M7nkkY0Qq-V_riVwI19BfvM6iUb8Ahbnidx6ffcELBGCZmD3O7SQhsHAuiMWrbLXigepl6L4QcIZa031CRbLnSihQhAZvIkr5G5_aJjqy8MzU3cokv3jIWy-Rl8Cj0hpHgywsPCfNry5QqCii7RN3m04Yc3KeSXIorX24_lCAuLosBG4h7iHD5eH7TqOfOV3-y_rfF6eYRzML4by6Y-wA7Uss07jae8VXNh-LATJPjyW9CISA',
+#
+#     'Content-Type': 'application/json'}
+def test_get_help_1():
+    url = 'https://api-dev.cloudmore.com/api/resellers/01d3a8ac-3fa2-7144-8149-14c83a35b4ed/settings/CustomProperties'
+    headers = {
+        'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkMzRERCQTEzNkU4MzFDNEFDMzM4OUY0OTM0NTJERjc1MDk3N0FFNjAiLCJ0eXAiOiJKV1QiLCJ4NXQiOiJ3OTI2RTI2REhFckRPSjlKTkZMZmRRbDNybUEifQ.eyJuYmYiOjE2Mjg3NjM1MzEsImV4cCI6MTYyODg0OTkzMSwiaXNzIjoiaHR0cHM6Ly9hcGktZGV2LmNsb3VkbW9yZS5jb20iLCJhdWQiOlsiaHR0cHM6Ly9hcGktZGV2LmNsb3VkbW9yZS5jb20vcmVzb3VyY2VzIiwiYXBpIl0sImNsaWVudF9pZCI6InJvLmN1c3RvbWVyLmNsaWVudCIsInN1YiI6ImF1dG90ZXN0QGNsb3VkbW9yZS5jb20iLCJhdXRoX3RpbWUiOjE2Mjg3NjM1MzEsImlkcCI6ImxvY2FsIiwicm9sZSI6IjEiLCJuYW1lIjoiYXV0b3Rlc3RAY2xvdWRtb3JlLmNvbSIsIlBhcmVudElkIjoiMDFkM2E4YWMtM2ZhMi03MTQ0LTgxNDktMTRjODNhMzViNGVkIiwic2NvcGUiOlsiYXBpIl0sImFtciI6WyJwYXNzd29yZCJdfQ.cBFTdB4400hNSCI4XhF6lgXQ07KxoLV3Y2yFoJfcUbIgpU_etFsx6P3X6tOfbrCxIrRZRf4dVzhTZpjU49b1uaD1ATtwi69C6leZnPqPXLFdaQ9BBUf4ktixJ_imjIxqn-YdCThhcbzmVeK4hrBu_6lE0T-u0nVUaaW09R9TxsnV8sRr4apYyVzyQ0AnQ-UYyAE8b8J--ZvtNzC7yyvP-5jnZ8w1pagQG9Og1i3vNZEqaUaE208uEMDm4rXtLgoq5t98uktGyLTbPE4A2WEJY5NzPKiqLuiU9op0hcbh5QzJ1gKq1CpZFeUdNkVv90mayO1sqtarWsGJzhG0yN0uOw',
+        'Content-Type': 'application/json'}
+        # Отправляем get request (запрос GET)
+    response = requests.get(url=url, headers=headers)
+    data = response.json()
+    print(data)
